@@ -1,0 +1,12 @@
+body {
+    margin: 0em;
+    padding: 0em;
+    background-color: #7EA8A6;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.bg {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+}
