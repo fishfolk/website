@@ -28,18 +28,18 @@ particle_box.height = document.body.scrollHeight;
 particle_box.width = window.innerWidth;
 
 for (let index = 0; index < particle_count; index++) {
-    let size = Math.floor(Math.random() * (16 - 32) + 32);
-    particles.push({ x: Math.random() * window.innerWidth, y: Math.random() * particle_box.height, width: size, height: size, speed: 0.8 + Math.random() * 1 });
+    let size = Math.floor(Math.random() * (10 - 32) + 32);
+    particles.push({ x: Math.random() * window.innerWidth, y: Math.random() * document.body.scrollHeight, width: size, height: size, speed: 0.8 + Math.random() * 1 });
 }
 
 // Particle update loop.
+context.imageSmoothingEnabled = false;
 let tick = 0;
 
 function particles_update() {
     requestAnimationFrame(particles_update);
     context.clearRect(0, 0, particle_box.width, particle_box.height);
     // update each particle
-    console.log(tick);
 
     for (let index = 0; index < particle_count; index++) {
         if (particles[index].y <= 0) {
