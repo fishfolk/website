@@ -18,10 +18,12 @@
 }
 
 html {
+    overflow-x: hidden;
     height: 160%;
 }
 
 body {
+    overflow-x: hidden;
     height: 100%;
     margin: 0em;
     padding: 0em;
@@ -68,6 +70,11 @@ body {
     z-index: 20;
 }
 
+.contain {
+    width: fit-content;
+    margin: auto;
+}
+
 canvas,
 img,
 .whale {
@@ -110,5 +117,24 @@ img,
     }
     to {
         background-position-x: -532px;
+    }
+}
+
+.quote {
+    text-align: center;
+    color: yellow;
+    text-shadow: 0px 6px rgb(172, 112, 0);
+    animation: quote 2s infinite;
+}
+
+@keyframes quote {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
     }
 }

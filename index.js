@@ -9,6 +9,10 @@ const context = particle_box.getContext('2d');
 const particle_texture = new Image(8, 8);
 let particles = [];
 
+// Generates a serving of fish puns.
+const quotes = ["I’m hooked!", "Seems a bit fishy to me.", "I’d make him walk the plankton for that.", "Not bad, cod do better…", "It’s a great oppor-tuna-ty!", "We whaley need to stop now!"]
+document.getElementById("quote").innerHTML = quotes[randomNumber(0, quotes.length)];
+
 // Preform a parallax effect on etch element, use multiplication as the offset.
 window.addEventListener('scroll', function() {
     let y = window.scrollY;
@@ -20,6 +24,7 @@ window.addEventListener('scroll', function() {
 window.addEventListener('resize', function() {
     particle_box.height = document.body.scrollHeight;
     particle_box.width = window.innerWidth;
+    context.imageSmoothingEnabled = false;
 })
 
 // Create particles.
@@ -54,3 +59,10 @@ function particles_update() {
 }
 
 particles_update();
+
+// Utilities
+
+function randomNumber(min, max) {
+    const r = Math.random() * (max - min) + min
+    return Math.floor(r)
+}
