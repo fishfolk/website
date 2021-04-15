@@ -1,12 +1,43 @@
+html {
+    height: 1000%;
+}
+
 body {
+    height: 100%;
     margin: 0em;
     padding: 0em;
-    background-color: #7EA8A6;
+    background-color: #5B5772;
+    background-repeat: no-repeat;
     font-family: 'Press Start 2P', cursive;
+    -webkit-font-smoothing: none;
 }
 
 .bg {
-    position: fixed;
+    position: absolute;
     z-index: -1;
+    top: 0;
     width: 100%;
+}
+
+img {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: blue orange;
+}
+
+*::-webkit-scrollbar {
+    width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #3A4466;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #181425;
 }
