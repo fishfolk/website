@@ -3,7 +3,7 @@ const fg2 = document.getElementById("fg2");
 const fg1 = document.getElementById("fg1");
 
 // Particle container.
-const particle_count = 20;
+const particle_count = 30;
 const particle_box = document.getElementById("particlebox");
 const context = particle_box.getContext('2d');
 const particle_texture = new Image(8, 8);
@@ -16,8 +16,8 @@ document.getElementById("quote").innerHTML = quotes[randomNumber(0, quotes.lengt
 // Preform a parallax effect on etch element, use multiplication as the offset.
 window.addEventListener('scroll', function() {
     let y = window.scrollY;
-    fg1.style.top = (y * 0.2) + 'px';
-    fg2.style.top = (y * 0.1) + 'px';
+    fg1.style.top = (y * 0.3) + 'px';
+    fg2.style.top = (y * 0.15) + 'px';
 })
 
 // If the browser is resized then handle the canvas
@@ -25,6 +25,9 @@ window.addEventListener('resize', function() {
     particle_box.height = document.body.scrollHeight;
     particle_box.width = window.innerWidth;
     context.imageSmoothingEnabled = false;
+    for (let index = 0; index < particle_count; index++) {
+        particles[index].x = Math.random() * window.innerWidth
+    }
 })
 
 // Create particles.

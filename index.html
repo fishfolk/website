@@ -19,16 +19,48 @@
 
         <div class="flex row jcbtw">
             <div class="whale blue"></div>
+            <div style="margin: 6em 10em;"></div>
             <div class="whale red flip"></div>
         </div>
+
         <div class="flex col">
-            <img height="280" src="assets/logo.svg" alt="" srcset="">
+            <img height="260" src="assets/logo.svg" alt="" srcset="">
             <h1 id="quote" class="quote">Fishy!</h1>
-            <a href="https://heroiclabs.com/">
+            <a class="contain" href="https://heroiclabs.com/">
                 <img src="assets/heroic.svg" alt="Heroic Labs" srcset="">
             </a>
         </div>
 
+        <div class="content_box">
+            <h1>An open reference game using Nakama for multiplayer</h1>
+            <p>Fish Game is an open game development project, sponsored by Heroic Labs</p>
+            <p>We are making this game because: Nakama users need better from-scratch examples of how to build multiplayer games with Nakama in the stack. Nakama developers need dogfooding 14 projects that are easy to sustain long-term. Indie game developers
+                need more in-depth tutorials and reference implementations of networked multiplayer games. The open game development ecosystem needs standardized language & models for talking about network design.</p>
+        </div>
+        <div class="content_box">
+            <h1>A “RealWorld” example for multiplayer games</h1>
+            <p>In web development there’s a hugely popular ‘glue layer’ project called RealWorld</p>
+            <p>So this is effectively what we’re setting out to do, in our own small way. Certainly we’re gonna have to go about it a bit differently because web app architecture doesn’t map 1:1 to games, but the fundamental concepts are largely the same.
+                Games, just like web apps, can draw a pretty clear line between backend and frontend.</p>
+            <p>Our minimal approach here is to start by making the same game in two different toolsets. There won’t be a strict API spec to follow yet; the two implementations will merely follow an identical Fish Game - Game Design Document.</p>
+        </div>
+        <div class="content_box">
+            <h1>Godot and Macroquad (Rust) as first examples</h1>
+            <p>For our two initial game examples, one will be made in the Godot Engine 2 and the other in Rust-lang with macroquad 22. Both will use Nakama for their social multiplayer infrastructure ( i.e. authentication, matchmaking & leaderboards) as
+                well as real-time multiplayer. Godot is the most popular game engine among indie and open source game developers. It’s also very high level (if desired), letting users make games with its own GDscript. Rust for gamedev 2 on the other hand
+                is a fast-growing new trend. It’s pretty much as low-level as any gamedev gets (without the foot-guns :heart_eyes_cat: ). The language has an official Working Group dedicated to gamedev 2. Both games will be full-stack implementations
+                of loosely coupled back- and front-ends for the Fish Game concept.</p>
+        </div>
+        <div class="content_box">
+            <h1>The :fish: Game(s)</h1>
+            <p>What we are making is an open remake of the excellent Duck Game</p>
+            <p>Blast your friends with Shotguns, Net Guns, Mind Control Rays, Saxophones, Magnet Guns, and much, much more. This is DUCK FISH GAME. Don’t blink.</p>
+            <p>Key Features 2 to 4 players in either Local Multiplayer or Online Play Easy to pick up, emphasizing strategy over twitch reaction Customize characters with hats, saved to your cross-platform profile (later) Create & explore user-made levels
+                (later) Why a remake of Duck Game Duck Game is an excellent game. It deserves the 10/10 rating it can boast on Steam. But it is also a bit stuck in an older tech stack. A combination of tech debt and lacking cross-platform infrastructure
+                makes it very PC-centric. It’s been ported to other platforms, albeit with a more limited experience (e.g. no online map sharing on consoles). It is also a perfectly moddable game, enabling players to make and share custom maps, weapons
+                and, most importantly, hats! :womans_hat: This level of moddability lends itself exceptionally well to open source practices. Hence our belief that we can level up what Duck Game currently is. There’s ample opportunity for collaboration
+                here: Fish Game should not be perceived as a threat, but rather as a tribute to Duck Game. We are not looking to co-opt the game; we wanna help make it better.</p>
+        </div>
     </div>
     <script type="text/javascript" src="index.js"></script>
 </body>
