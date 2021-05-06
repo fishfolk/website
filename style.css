@@ -59,7 +59,14 @@ h1 {
     width: 100%;
 }
 
+.item {
+    position: relative;
+    left: 3em;
+    animation: item 1.1s steps(7) infinite;
+}
+
 #particlebox {
+    pointer-events: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -101,10 +108,41 @@ img,
     -ms-interpolation-mode: nearest-neighbor;
 }
 
+.fishbox {
+    max-width: 200px;
+    transform: scale(7);
+    margin: auto;
+    margin-bottom: 4em;
+}
+
+@media only screen and (max-width: 949px) {
+    .fishbox {
+        transform: scale(5);
+    }
+}
+
+@media only screen and (max-width: 679px) {
+    .fishbox {
+        transform: scale(4);
+    }
+}
+
+@media only screen and (max-width: 539px) {
+    .fishbox {
+        transform: scale(3);
+    }
+}
+
+@media only screen and (max-width: 409px) {
+    .fishbox {
+        transform: scale(2);
+        margin-bottom: 0em;
+    }
+}
+
 .whale {
     width: 76px;
     height: 64px;
-    transform: scale(4.5);
     animation: whale 1.1s steps(7) infinite;
 }
 
@@ -123,7 +161,7 @@ img,
 }
 
 .flip {
-    transform: scale(4.5) scaleX(-1);
+    transform: scaleX(-1);
 }
 
 @keyframes whale {
@@ -151,6 +189,18 @@ img,
     }
     100% {
         transform: scale(1);
+    }
+}
+
+@keyframes item {
+    0% {
+        top: 0em;
+    }
+    50% {
+        top: 0.15em;
+    }
+    100% {
+        top: 0em;
     }
 }
 
