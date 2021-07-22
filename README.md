@@ -7,5 +7,13 @@ I recommend simple server for visual studio code users.
 https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
 
 # Sponsors
-[(/assets/amethyst_foundation.svg)](https://amethyst.rs/)
-[(/assets/heroic.svg)](https://heroiclabs.com/)
+<p>
+  <a href="https://amethyst.rs/">
+    <img height="50px" src="assets/amethyst_foundation.svg" alt="Amethyst" />
+  </a>
+</p>
+<p>
+  <a href="https://heroiclabs.com/">
+    <img height="50px" src="assets/heroic.svg" alt="heroiclabs" />
+  </a>
+</p>
