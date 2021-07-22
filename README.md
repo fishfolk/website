@@ -5,3 +5,7 @@ pure html and css website
 I just use a simple http server to host the page in a local setting so hot-reloading works,
 I recommend simple server for visual studio code users.
 https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
+
+# Sponsors
+[(/assets/amethyst_foundation.svg)](https://amethyst.rs/)
+[(/assets/heroic.svg)](https://heroiclabs.com/)
