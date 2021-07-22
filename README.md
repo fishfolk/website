@@ -1,4 +1,4 @@
-# fishgame website
+# Fishgame Website
 pure html and css website
 
 # Development
