@@ -28,7 +28,7 @@ body {
     padding: 0em;
     background-color: #5B5772;
     background-repeat: no-repeat;
-    font-family: 'Press Start 2P', cursive;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     -webkit-font-smoothing: none;
 }
 
@@ -178,6 +178,7 @@ img,
     color: yellow;
     text-shadow: 0px 6px rgb(172, 112, 0);
     animation: quote 2s infinite;
+    font-family: 'Press Start 2P', cursive;
 }
 
 @keyframes quote {
