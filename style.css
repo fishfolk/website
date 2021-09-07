@@ -116,12 +116,17 @@ h1 {
 
 .content_button {
     margin-top: 1em;
-    padding: 0.3em 2em 1em 2em;
+    padding: 0.5em 1.3em 1em 1.3em;
     border-image: url('assets/ui/button_background_2.png') round;
     border-image-slice: calc(70 / 190 * 100%) calc(70 / 190 * 100%) fill;
     border-image-width: 35px 35px;
     text-align: center;
     transition: 0.31s;
+}
+
+.content_button p{
+    font-size: 2.5em;
+    margin: 0px;
 }
 
 .content_button:hover {
