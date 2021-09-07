@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 * {
     scrollbar-width: thin;
     scrollbar-color: blue orange;
@@ -27,12 +28,19 @@ body {
     padding: 0em;
     background-color: #5B5772;
     background-repeat: no-repeat;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'VT323', monospace;
     -webkit-font-smoothing: none;
 }
 
 h1 {
     font-size: 1.5em;
+}
+
+.big{
+    font-size: 4em !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    font-weight: 200;
 }
 
 .flex {
@@ -94,6 +102,29 @@ h1 {
     border-image-slice: calc(52 / 190 * 100%) calc(52 / 190 * 100%) fill;
     border-image-width: 52px 52px;
     text-align: center;
+}
+
+.content_button {
+    margin-top: 1em;
+    padding: 0.3em 2em 1em 2em;
+    border-image: url('assets/ui/button_background_2.png') round;
+    border-image-slice: calc(70 / 190 * 100%) calc(70 / 190 * 100%) fill;
+    border-image-width: 35px 35px;
+    text-align: center;
+    transition: 0.31s;
+}
+
+.content_button:hover {
+    transform: scaleX(1.2) scaleY(0.8);
+    filter: saturate(250%) hue-rotate(80deg);
+}
+
+.content_button:active {
+    transform: scaleX(1.5) scaleY(1.1);
+}
+
+.content_button p {
+    color: #003951 !important;
 }
 
 canvas,
