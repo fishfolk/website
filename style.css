@@ -82,6 +82,16 @@ h1 {
     z-index: 20;
 }
 
+.idvideo{
+    border-radius: 1em;
+    box-shadow: 0px 10px 7px 0px rgba(0, 0, 0, 0.219);
+    transition: 0.3s;
+}
+
+.idvideo:hover{
+    transform: scale(1.4);
+}
+
 .content {
     max-width: 1200px !important;
     margin: 15em auto;
@@ -150,6 +160,9 @@ img,
 @media only screen and (max-width: 949px) {
     .fishbox {
         transform: scale(5);
+    }
+    .idvideo:hover{
+        transform: scale(1);
     }
 }
 
