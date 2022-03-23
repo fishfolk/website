@@ -19,7 +19,7 @@ const quotes = [
     "We whaley need to stop now!",
     "Well, it’s oh-fish-ial.",
     "Keep your friends close and your anemones closer.",
-    "Let’s just clam down should we.",
+    "Let’s just clam down shall we.",
     "Holy shrimp! This scampi happening.",
     "The new squid on the block.",
     "I’m so angry I could krill someone.",
