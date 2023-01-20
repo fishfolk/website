@@ -1,4 +1,5 @@
 // Grab our background slices elements.
+const fg3 = document.getElementById("fg3");
 const fg2 = document.getElementById("fg2");
 const fg1 = document.getElementById("fg1");
 
@@ -30,13 +31,14 @@ document.getElementById("quote").innerHTML = quotes[randomNumber(0, quotes.lengt
 // Preform a parallax effect on etch element, use multiplication as the offset.
 window.addEventListener('scroll', function() {
     let y = window.scrollY;
-    fg1.style.top = (y * 0.3) + 'px';
-    fg2.style.top = (y * 0.15) + 'px';
+    fg1.style.top = (y * 0.6) + 'px';
+    fg2.style.top = (y * 0.5) + 'px';
+    fg3.style.top = (y * 0.3) + 'px';
 })
 
 // If the browser is resized then handle the canvas
 window.addEventListener('resize', function() {
-    particle_box.height = document.body.scrollHeight;
+    particle_box.height = window.innerHeight;
     particle_box.width = window.innerWidth;
     context.imageSmoothingEnabled = false;
     for (let index = 0; index < particle_count; index++) {

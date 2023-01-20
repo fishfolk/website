@@ -1,0 +1,3 @@
+[submodule "themes/fishfolk"]
+	path = themes/fishfolk
+	url = https://github.com/fishfolk/website-theme.git
