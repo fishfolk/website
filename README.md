@@ -1,4 +1,7 @@
 # FishFight Website [![Netlify Status](https://api.netlify.com/api/v1/badges/fb9eee95-1337-4b10-bbdb-437efa1b30f8/deploy-status)](https://app.netlify.com/sites/fishfight/deploys)
+
+> **⚠️ Repository has moved:** The repository for the website has been moved to [fishfolk/fishfolk.org](https://github.com/fishfolk/fishfolk.org).
+
 pure html and css website
 
 # Development
